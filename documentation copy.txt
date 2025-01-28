@@ -1,0 +1,131 @@
+*** IELTS writing task 2 MVP ***
+
+Creating and MVP platform for english students for practicing their writing task 2 IELTS test. Users will be able to write therir essay in a input section and send it to be evaluated using AI tools, especifically DeepSeek's API, wich beside to evaluate the essay will also generate a feedback, give a score and process the language.
+
+
+*** PLAN:
+
+Step 1: Define the Scope of Your MVP
+Focus on the core functionality for Writing Test 2 (essay writing). Key features for your MVP could include:
+
+1- Essay Prompt Delivery: Provide users with IELTS Writing Task 2 prompts.
+
+2- Essay Submission: Allow users to submit their essays.
+
+3- Automated Evaluation: Use AI to evaluate essays based on IELTS criteria (Task Achievement, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy).
+
+4- Feedback Generation: Provide detailed feedback and suggestions for improvement.
+
+5- Scoring: Assign a band score (e.g., Band 6.5, Band 7) based on the evaluation.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Step 2: Set Up Your Development Environment
+
+1- Choose a Tech Stack:
+    - Frontend: React, Angular, or Vue.js for the user interface.
+    - Backend: Node.js, Django, or Flask for handling API requests.
+    - Database: MongoDB, PostgreSQL, or Firebase for storing user data and essays.
+
+2- Set Up Version Control: Use Git and GitHub/GitLab for code management.
+
+3- Hosting: Use platforms like Vercel, Netlify (frontend), or AWS/Heroku (backend).
+
+----------------------------------------------------------------------------------------------------------------------
+
+Step 3: Integrate DeepSeek’s API
+
+1- Sign Up for DeepSeek API:
+    - Visit the DeepSeek Developer Portal and create an account.
+    - Obtain your API key for authentication.
+
+2- Explore API Documentation:
+    - Check the available endpoints for text analysis, language processing, and feedback generation.
+    - Identify endpoints that can evaluate essays and provide feedback.
+
+3- Test the API:
+    - Use tools like Postman to test API calls and understand the response format.
+    - Example: Send a sample essay to the API and analyze the feedback.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Step 4: Build Core Features
+
+1- Essay Prompt Delivery:
+    - Create a database of IELTS Writing Task 2 prompts.
+    - Randomly serve a prompt to the user when they start a practice session.
+
+2- Essay Submission:
+    - Build a text input interface where users can write and submit their essays.
+    - Send the submitted essay to your backend for processing.
+
+3- Automated Evaluation:
+    - Use DeepSeek’s API to analyze the essay and evaluate it based on IELTS criteria.
+    - API call
+
+4- Feedback Generation:
+    - Use the API response to generate actionable feedback for the user.
+    - Highlight areas for improvement (e.g., grammar, vocabulary, coherence).
+
+5- Scoring:
+    - Map the API’s evaluation to an IELTS band score (e.g., 6.5, 7.0).
+
+----------------------------------------------------------------------------------------------------------------------
+
+Step 5: Design the User Interface
+
+1- Simple and Intuitive Design:
+    - Use frameworks like Bootstrap or Tailwind CSS for styling.
+    - Focus on usability for non-technical users.
+
+2- Key Pages:
+    - Homepage: Explain the platform and its features.
+    - Practice Page: Display the essay prompt and text input area.
+    - Results Page: Show the band score, feedback, and suggestions.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Step 6: Test Your MVP
+
+1- Functional Testing:
+    - Ensure all features (prompt delivery, submission, evaluation, feedback) work as expected.
+
+2- User Testing:
+    - Share the MVP with a small group of users (e.g., IELTS aspirants) and gather feedback.
+
+3- Iterate:
+    - Improve the platform based on user feedback.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Step 7: Launch and Gather Feedback
+
+1- Deploy Your MVP:
+    - Host your platform on a cloud service (e.g., AWS, Heroku, Vercel).
+
+2- Promote Your Platform:
+    - Share it with IELTS preparation communities on social media, forums, or blogs.
+
+3- Monitor Usage:
+    - Track user engagement and identify areas for improvement.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Step 8: Plan for Future Features
+Once your MVP is successful, consider adding:
+
+1- Timed Practice Sessions: Simulate real IELTS test conditions.
+
+2- Progress Tracking: Allow users to track their improvement over time.
+
+3- Additional Test Sections: Expand to include Reading, Listening, and Speaking practice.
+
+----------------------------------------------------------------------------------------------------------------------
+
+*** WORKFLOW:
+
+1- User visits your platform and clicks “Start Writing Practice.”
+2- A random IELTS Writing Task 2 prompt is displayed.
+3- User writes and submits their essay.
+4- The essay is sent to DeepSeek’s API for evaluation.
+5- The platform displays the band score and detailed feedback.
