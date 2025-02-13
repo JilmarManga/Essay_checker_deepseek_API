@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 #import requests
 import json
+import random
 
 
 app = Flask(__name__)
@@ -9,7 +10,7 @@ CORS(app) # Enable CORS for Front-Backend communication
 
 
 #Load IELTS writing task 2 prompts
-with open('prompts.py', 'r') as file:
+with open('prompts.json', 'r') as file:
     prompts = json.load(file)
 
 
@@ -20,7 +21,6 @@ API_KEY = "YOUR_DEEPSEEK_API_KEY"
 #Route to get a random prompt
 @app.route("/get-prompt", methods=["GET"])
 def get_prompt():
-    import random
     prompt = random.choice(prompts)
     return jsonify({"prompt": prompt})
 

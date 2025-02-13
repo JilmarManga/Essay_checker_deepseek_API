@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 
 const Prompt = ({onEssaySubmit}) => {
@@ -9,7 +9,7 @@ const Prompt = ({onEssaySubmit}) => {
     useEffect(() => {
         //Fetch a random prompt from the backend
         axios.get('http://127.0.0.1:5000/get-prompt')
-        .them(response => setPrompt(response.data.prompt))
+        .then(response => setPrompt(response.data.prompt))
         .catch(error => console.error(error));
     }, []);
 

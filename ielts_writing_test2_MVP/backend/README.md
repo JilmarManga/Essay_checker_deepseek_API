@@ -1,0 +1,1 @@
+script for running the virtual environment = source venv/bin/activate
