@@ -13,7 +13,7 @@ const Prompt = ({ onEssaySubmit }) => {
         axios.get('http://127.0.0.1:5000/get-prompt')
         .then(response => setPrompt(response.data.prompt))
         .catch(error => console.error(error));
-    }, []);
+    }, []); //Empty dependency array ensures thhis runs only once
 
     const handleSubmit = useCallback(() => {
         if (isSubmiting) return; //Prevent multiple submissions
