@@ -18,19 +18,16 @@ const Prompt = ({onEssaySubmit}) => {
     };
 
     return (
-        <div>
+        <div className="prompt-card">
             <h2>IELTS Writing Task 2</h2>
             <p>{prompt}</p>
             <textarea
-                rows='10'
-                cols='50'
                 value={essay}
                 onChange={(e) => setEssay(e.target.value)}
-                placeholder='Write your essay here...'
+                placeholder="Write your essay here..."
             />
-            <br/>
-            <button onClick={handleSubmit}>Submit Essay</button>
-        </div>
+        <button onClick={handleSubmit}>Submit Essay</button>
+    </div>
     );
 };
 
