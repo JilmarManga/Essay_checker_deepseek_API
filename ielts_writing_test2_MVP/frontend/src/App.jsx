@@ -6,11 +6,22 @@ import Evaluation from './components/Evaluation.jsx';
 const App = () => {
     const [evaluation, setEvaluation] = useState(null);
 
-    const handleEssaySubmit = (essay) => {
+    /*const handleEssaySubmit = (essay) => {
         console.log('Submit button clicked') //Debugging line
         axios.post('http://127.0.0.1:5000//evaluate-essay', { essay })
         .then(response => setEvaluation(response.data))
         .catch(error => console.error(error));
+    };*/
+
+    const handleEssaySubmit = (essay) => {
+    axios.post('http://127.0.0.1:5000/evaluate-essay', { essay })
+        .then(response => {
+            console.log("Evaluation:", response.data);
+            setEvaluation(response.data);
+        })
+        .catch(error => {
+            console.error("Error evaluating essay:", error);
+        });
     };
 
     return (

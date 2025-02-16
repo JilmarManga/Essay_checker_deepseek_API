@@ -101,6 +101,10 @@ body, html {
     background-color: #3182ce;
     }
 
+    button:disabled{
+    background-color: #525d6f;
+    }
+
   /* Evaluation Section */
     .evaluation-card {
     background-color: #ffffff;
