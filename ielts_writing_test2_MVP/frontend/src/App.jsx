@@ -25,10 +25,14 @@ const App = () => {
     };
 
     return (
-        <div className="container">
-            <h1>IELTS Writing Practice</h1>
+        <div className="min-h-screen bg-gray-100 py-8">
+            <div className='max-w-4xl mx-auto px-4'>
+            <h1 className='text-4xl font-bold text-center text-blue-600 mb-8'>
+                IELTS Writing Practice
+            </h1>
             <Prompt onEssaySubmit={handleEssaySubmit} />
             {evaluation && <Evaluation evaluation={evaluation} />}
+            </div>
         </div>
     );
 };

@@ -121,6 +121,13 @@ body, html {
     margin-bottom: 1.5rem;
     }
 
+    .evaluation-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
     .evaluation-card p {
     font-size: 1.1rem;
     color: #4a5568;
